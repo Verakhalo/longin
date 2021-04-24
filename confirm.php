@@ -1,6 +1,6 @@
 <?php
 	function redirect() {
-		header('Location: register.php');
+		header('Location: index.php');
 		exit();
 	}
 
