@@ -30,14 +30,14 @@
                 include_once "PHPMailer/PHPMailer.php";
 
                 $mail = new PHPMailer();
-                $mail->setFrom('codingpassiveincome.com');
+                $mail->setFrom('heroku.com');
                 $mail->addAddress($email, $name);
                 $mail->Subject = "Please verify email!";
                 $mail->isHTML(true);
                 $mail->Body = "
                     Please click on the link below:<br><br>
                     
-                    <a href='http://codingpassiveincome.com/PHPEmailConfirmation/confirm.php?email=$email&token=$token'>Click Here</a>
+                    <a href='http://longitud.herokuapp.com/confirm.php?email=$email&token=$token'>Click Here</a>
                 ";
 
                 if ($mail->send())
