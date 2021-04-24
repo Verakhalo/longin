@@ -63,7 +63,7 @@
 		<div class="row justify-content-center">
 			<div class="col-md-6 col-md-offset-3" align="center">
 
-				<img src="images/logo.png"><br><br>
+				
 
 				<?php if ($msg != "") echo $msg . "<br><br>" ?>
 
